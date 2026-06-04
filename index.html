@@ -4,332 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Black Bear | Royal Experience</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
-
     <style>
-        /* --- 1. ROYAL DARK THEME (DEFAULT) --- */
         :root, [data-theme="dark"] {
-            --bg-color: #000000;
-            --surface-color: #0a0a0a;
-            --text-main: #ffffff;
-            --text-muted: #737373;
-            --accent-gold: #c5a059;
-            --accent-gold-glow: rgba(197, 160, 89, 0.1);
-            --line-color: rgba(255, 255, 255, 0.08);
-            --nav-bg: rgba(0, 0, 0, 0.8);
-            --pill-bg: rgba(255, 255, 255, 0.03);
-            --modal-bg: rgba(0, 0, 0, 0.85);
-
-            --nav-height: 70px;
-            --font-en: 'Plus Jakarta Sans', sans-serif;
-            --font-ar: 'Tajawal', sans-serif;
+            --bg-color: #000000; --surface-color: #0a0a0a; --text-main: #ffffff;
+            --text-muted: #737373; --accent-gold: #c5a059;
+            --line-color: rgba(255, 255, 255, 0.08); --nav-bg: rgba(0, 0, 0, 0.8);
+            --pill-bg: rgba(255, 255, 255, 0.03); --font-en: 'Plus Jakarta Sans', sans-serif;
             --font-heading-en: 'Playfair Display', serif;
-            --smooth-curve: cubic-bezier(0.25, 1, 0.5, 1);
         }
-
-        /* --- 2. ROYAL BLANC (LIGHT) THEME --- */
         [data-theme="light"] {
-            --bg-color: #f8f9fa;
-            --surface-color: #ffffff;
-            --text-main: #0f172a;
-            --text-muted: #64748b;
-            --accent-gold: #b4904a;
-            --accent-gold-glow: rgba(180, 144, 74, 0.15);
-            --line-color: rgba(0, 0, 0, 0.06);
-            --nav-bg: rgba(248, 249, 250, 0.85);
+            --bg-color: #f8f9fa; --surface-color: #ffffff; --text-main: #0f172a;
+            --text-muted: #64748b; --accent-gold: #b4904a;
+            --line-color: rgba(0, 0, 0, 0.06); --nav-bg: rgba(248, 249, 250, 0.85);
             --pill-bg: rgba(0, 0, 0, 0.04);
-            --modal-bg: rgba(255, 255, 255, 0.85);
         }
-
         * { box-sizing: border-box; margin: 0; padding: 0; }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: var(--font-en);
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            overflow-x: hidden;
-            transition: background-color 0.6s var(--smooth-curve), color 0.6s var(--smooth-curve);
-        }
-
-        body[dir="rtl"] { font-family: var(--font-ar); }
-        body[dir="rtl"] h1, body[dir="rtl"] .category-title { font-family: var(--font-ar); font-weight: 500; }
-
-        .top-btn {
-            position: absolute; top: 28px;
-            background: transparent; border: none;
-            color: var(--text-muted);
-            font-size: 0.75rem; letter-spacing: 2px; font-weight: 500;
-            cursor: pointer; z-index: 100; font-family: inherit;
-            text-transform: uppercase; transition: color 0.3s ease;
-        }
-        .top-btn:hover { color: var(--text-main); }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-en); transition: 0.5s; }
+        .top-btn { position: absolute; top: 28px; background: transparent; border: none; color: var(--text-muted); cursor: pointer; z-index: 100; text-transform: uppercase; letter-spacing: 2px; font-size: 0.75rem; }
+        .brand-logo { width: 140px; height: 140px; object-fit: contain; margin: 0 auto 2rem; display: block; }
+        header { text-align: center; padding: 8vh 1.5rem 4vh; }
+        h1 { font-family: var(--font-heading-en); font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .menu-container { max-width: 680px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+        .menu-item { display: flex; justify-content: space-between; padding: 2rem 0; border-bottom: 1px solid var(--line-color); align-items: center; }
+        .item-name { font-weight: 500; font-size: 1.1rem; }
+        .item-thumbnail { width: 80px; height: 80px; border-radius: 8px; object-fit: cover; cursor: pointer; }
         
-        .lang-toggle { right: 28px; }
-        .theme-toggle { left: 28px; }
-        
-        body[dir="rtl"] .lang-toggle { right: auto; left: 28px; }
-        body[dir="rtl"] .theme-toggle { left: auto; right: 28px; }
-
-        #welcome-screen {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background-color: var(--bg-color); z-index: 9999;
-            display: flex; flex-direction: column; justify-content: center; align-items: center;
-            animation: fadeOutDisplay 1.5s var(--smooth-curve) 2.2s forwards;
-            pointer-events: none;
-        }
-        .welcome-monogram {
-            font-family: var(--font-heading-en); font-size: 4rem; color: var(--text-main);
-            font-weight: 400; opacity: 0; animation: revealUp 1.2s var(--smooth-curve) 0.3s forwards;
-        }
-        .welcome-text {
-            font-size: 0.7rem; color: var(--accent-gold); letter-spacing: 8px; text-transform: uppercase;
-            margin-top: 1.5rem; opacity: 0; animation: revealUp 1.2s var(--smooth-curve) 0.6s forwards;
-        }
-        
-        @keyframes revealUp { 0% { opacity: 0; transform: translateY(15px); } 100% { opacity: 1; transform: translateY(0); } }
-        @keyframes fadeOutDisplay { 0% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
-
-        header {
-            text-align: center; padding: 12vh 1.5rem 6vh;
-            border-bottom: 1px solid var(--line-color);
-            background: radial-gradient(circle at top, var(--surface-color) 0%, var(--bg-color) 80%);
-            transition: background 0.6s var(--smooth-curve);
-        }
-        .brand-logo {
-            width: 140px; height: 140px; object-fit: contain;
-            margin: 0 auto 2rem; display: block;
-            transition: all 0.3s ease;
-        }
-        h1 { font-family: var(--font-heading-en); font-size: 2.8rem; color: var(--text-main); margin-bottom: 0.8rem; font-weight: 400; letter-spacing: -0.5px; }
-        .subtitle { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 4px; text-transform: uppercase; font-weight: 400; }
-
-        .sticky-nav {
-            position: sticky; top: 0;
-            background: var(--nav-bg);
-            backdrop-filter: blur(24px) saturate(200%);
-            -webkit-backdrop-filter: blur(24px) saturate(200%);
-            z-index: 50; display: flex; gap: 8px;
-            padding: 1.5rem; overflow-x: auto;
-            border-bottom: 1px solid transparent; 
-            scrollbar-width: none;
-            transition: background 0.6s var(--smooth-curve);
-        }
-        .sticky-nav::-webkit-scrollbar { display: none; }
-        .nav-pill {
-            background: var(--pill-bg); color: var(--text-muted);
-            padding: 8px 20px; border-radius: 40px; font-size: 0.85rem;
-            white-space: nowrap; cursor: pointer; border: none;
-            transition: all 0.4s var(--smooth-curve); font-weight: 400;
-        }
-        .nav-pill.active { background: var(--text-main); color: var(--bg-color); font-weight: 500; }
-
-        .menu-container { max-width: 680px; margin: 0 auto; padding: 0 1.5rem 6rem; }
-        .category-section { scroll-margin-top: calc(var(--nav-height) + 20px); }
-        .category-title {
-            font-family: var(--font-heading-en); font-size: 2rem; color: var(--text-main); font-weight: 400;
-            margin: 4rem 0 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line-color);
-            opacity: 0; animation: revealUp 1s var(--smooth-curve) forwards;
-        }
-        .menu-item {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 2rem 0; border-bottom: 1px solid var(--line-color); gap: 24px;
-            opacity: 0; animation: revealUp 1s var(--smooth-curve) forwards;
-        }
-        .menu-item-info { flex: 1; display: flex; flex-direction: column; justify-content: center; }
-        .item-header { display: flex; align-items: center; gap: 12px; margin-bottom: 0.6rem; }
-        .item-name { font-weight: 500; font-size: 1.1rem; letter-spacing: 0.2px; color: var(--text-main); }
-        .badge {
-            color: var(--accent-gold); border: 1px solid var(--accent-gold-glow);
-            font-size: 0.6rem; font-weight: 600; padding: 3px 8px; border-radius: 30px;
-            text-transform: uppercase; letter-spacing: 1px;
-        }
-        .item-desc { font-size: 0.85rem; color: var(--text-muted); line-height: 1.6; font-weight: 300; }
-        .item-price { font-weight: 400; color: var(--text-main); font-size: 1rem; margin-top: 12px; letter-spacing: 1px; }
-        .item-thumbnail {
-            width: 80px; height: 80px; border-radius: 8px; object-fit: cover;
-            background: var(--surface-color); filter: grayscale(15%) contrast(1.1); 
-            flex-shrink: 0; transition: filter 0.4s ease; cursor: pointer;
-        }
-        .item-thumbnail:hover { filter: grayscale(0%) contrast(1); }
-
-        .modal-overlay {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background: var(--modal-bg); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px);
-            z-index: 100000; display: flex; justify-content: center; align-items: center;
-            opacity: 0; pointer-events: none; transition: opacity 0.4s var(--smooth-curve);
-        }
+        /* ELITE AGENCY MODAL */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #000; z-index: 100000; display: flex; flex-direction: column; opacity: 0; pointer-events: none; transition: 0.4s; }
         .modal-overlay.active { opacity: 1; pointer-events: auto; }
-        .modal-content {
-            position: relative; max-width: 90%; max-height: 85vh;
-            transform: scale(0.95); transition: transform 0.4s var(--smooth-curve);
-        }
-        .modal-overlay.active .modal-content { transform: scale(1); }
-        .modal-img {
-            max-width: 100%; max-height: 85vh; border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.8); object-fit: contain;
-        }
-        .modal-close {
-            position: absolute; top: -50px; right: 0;
-            background: transparent; border: none; color: var(--text-muted);
-            font-size: 2.5rem; font-weight: 300; cursor: pointer; transition: color 0.3s;
-        }
-        .modal-close:hover { color: var(--accent-gold); }
-        footer { 
-            text-align: center; padding: 4rem 1rem; color: var(--text-muted); 
-            font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; 
-            border-top: 1px solid var(--line-color); margin-top: 2rem; 
-        }
+        .modal-hero { width: 100%; height: 55%; object-fit: cover; }
+        .modal-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: white; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 1.5rem; }
+        .modal-details { padding: 2rem; flex-grow: 1; }
+        .modal-title { font-family: var(--font-heading-en); font-size: 2.5rem; margin-bottom: 1rem; }
+        .modal-footer { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem 2rem; border-top: 1px solid #333; }
+        .order-btn { background: var(--accent-gold); color: black; padding: 1rem 2rem; border-radius: 50px; border: none; font-weight: 700; cursor: pointer; }
     </style>
 </head>
 <body>
 
-    <button id="lang-toggle" class="top-btn lang-toggle" onclick="toggleLanguage()">عربي / AR</button>
-    
-    <button id="theme-toggle" class="top-btn theme-toggle" onclick="cycleTheme()" aria-label="Change Theme" style="display: flex; align-items: center;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 22a10 10 0 1 1 10-10c0 2-2.5 3-4 3-1.5 0-2 1-2 2s.5 2 1 2c-.5.5-1.5 3-5 3Z"/>
-            <circle cx="7.5" cy="10.5" r=".5" fill="currentColor"/>
-            <circle cx="10.5" cy="7.5" r=".5" fill="currentColor"/>
-            <circle cx="14.5" cy="7.5" r=".5" fill="currentColor"/>
-            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
-        </svg>
-    </button>
-
-    <div id="welcome-screen">
-        <div class="welcome-monogram">BB</div>
-        <div class="welcome-text" id="welcome-text">Royal Experience</div>
-    </div>
-
+    <button class="top-btn theme-toggle" style="left: 28px;" onclick="cycleTheme()">THEME</button>
     <header>
-        <img src="logo.png" alt="Black Bear Logo" class="brand-logo">
+        <img src="logo.png" alt="Logo" class="brand-logo">
         <h1 id="header-title">Black Bear</h1>
-        <div class="subtitle" id="header-subtitle">Royal Experience &bull; Est 2026</div>
     </header>
 
-    <div class="sticky-nav" id="sticky-nav"></div>
     <main class="menu-container" id="menu-container"></main>
 
-    <footer>
-        <p>&copy; 2026 Black Bear. All rights reserved.</p>
-    </footer>
-
-    <div id="image-modal" class="modal-overlay" onclick="closeImageModal()">
-        <div class="modal-content" onclick="event.stopPropagation()">
+    <div id="image-modal" class="modal-overlay">
+        <div class="modal-content" style="height:100%; display:flex; flex-direction:column;">
             <button class="modal-close" onclick="closeImageModal()">&times;</button>
-            <img id="modal-image" class="modal-img" src="" alt="Full size view">
+            <img id="modal-image" class="modal-hero" src="" alt="Product">
+            <div class="modal-details">
+                <div id="modal-cat" style="color:var(--accent-gold); letter-spacing:3px; text-transform:uppercase; font-size:0.8rem;"></div>
+                <div id="modal-title" class="modal-title"></div>
+            </div>
+            <div class="modal-footer">
+                <div id="modal-price" style="font-size:1.5rem; font-weight:500;"></div>
+                <button class="order-btn">ORDER NOW</button>
+            </div>
         </div>
     </div>
 
     <script>
-        let currentLang = 'en'; 
-        let isInitialLoad = true;
+        const themes = ['dark', 'light']; let currentThemeIndex = 0;
         
-        // Themes Array - Dark is first
-        const themes = ['dark', 'light']; 
-        let currentThemeIndex = 0;
-
-        const translations = {
-            en: { welcome: "Royal Experience", title: "Black Bear", subtitle: "Royal Experience &bull; Est 2026", btn: "عربي / AR", currency: "IQD" },
-            ar: { welcome: "تجربة ملكية", title: "بلاك بير", subtitle: "تجربة ملكية &bull; تأسس ٢٠٢٦", btn: "EN / English", currency: "د.ع" }
-        };
-
         async function fetchAndRenderApp() {
-            try {
-                const response = await fetch('menu.json');
-                const menuData = await response.json();
-                const t = translations[currentLang];
-                document.getElementById('welcome-text').innerHTML = t.welcome;
-                document.getElementById('header-title').innerHTML = t.title;
-                document.getElementById('header-subtitle').innerHTML = t.subtitle;
-                document.getElementById('lang-toggle').innerHTML = t.btn;
-
-                const container = document.getElementById('menu-container');
-                const navContainer = document.getElementById('sticky-nav');
-                const groupedMenu = menuData.reduce((groups, item) => {
-                    const catName = currentLang === 'en' ? item.category : item.ar_category;
-                    const catId = item.category.replace(/\s+/g, '-').toLowerCase(); 
-                    if (!groups[catName]) groups[catName] = { id: catId, items: [] };
-                    groups[catName].items.push(item);
-                    return groups;
-                }, {});
-
-                let menuHtml = '';
-                let navHtml = '';
-                let delay = isInitialLoad ? 2.5 : 0; 
-                Object.entries(groupedMenu).forEach(([catName, data], index) => {
-                    navHtml += `<button class="nav-pill ${index === 0 ? 'active' : ''}" onclick="scrollToCat('${data.id}')">${catName}</button>`;
-                    menuHtml += `<div id="${data.id}" class="category-section">`;
-                    menuHtml += `<h2 class="category-title" style="animation-delay: ${delay}s">${catName}</h2>`;
-                    delay += 0.1;
-                    data.items.forEach(item => {
-                        const name = currentLang === 'en' ? item.name : item.ar_name;
-                        const desc = currentLang === 'en' ? item.desc : item.ar_desc;
-                        const badge = currentLang === 'en' ? item.badge : item.ar_badge;
-                        const badgeHtml = badge ? `<span class="badge">${badge}</span>` : '';
-                        const thumbnailHtml = item.image ? `<img src="${item.image}" class="item-thumbnail" alt="${name}" onclick="openImageModal('${item.image}')">` : '';
-                        menuHtml += `
-                            <div class="menu-item" style="animation-delay: ${delay}s">
-                                <div class="menu-item-info">
-                                    <div class="item-header">
-                                        <span class="item-name">${name}</span>
-                                        ${badgeHtml}
-                                    </div>
-                                    <div class="item-desc">${desc}</div>
-                                    <div class="item-price">${item.price} ${t.currency}</div>
-                                </div>
-                                ${thumbnailHtml}
-                            </div>`;
-                        delay += 0.1;
-                    });
-                    menuHtml += `</div>`;
-                });
-                container.innerHTML = menuHtml;
-                navContainer.innerHTML = navHtml;
-            } catch (error) {
-                console.error("Error loading menu data:", error);
-                document.getElementById('menu-container').innerHTML = "<p style='text-align:center'>Loading menu...</p>";
-            }
+            const response = await fetch('menu.json');
+            const menuData = await response.json();
+            const container = document.getElementById('menu-container');
+            let html = '';
+            menuData.forEach(item => {
+                html += `
+                    <div class="menu-item">
+                        <div>
+                            <div class="item-name">${item.name}</div>
+                            <div style="color:var(--text-muted); font-size:0.9rem; margin-top:5px;">${item.price} IQD</div>
+                        </div>
+                        <img src="${item.image || ''}" class="item-thumbnail" onclick="openImageModal(${JSON.stringify(item).replace(/"/g, '&quot;')})">
+                    </div>`;
+            });
+            container.innerHTML = html;
         }
 
-        function cycleTheme() {
-            currentThemeIndex = (currentThemeIndex + 1) % themes.length;
-            const newTheme = themes[currentThemeIndex];
-            document.documentElement.setAttribute('data-theme', newTheme);
-        }
-
-        function toggleLanguage() {
-            currentLang = currentLang === 'en' ? 'ar' : 'en';
-            document.documentElement.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-            isInitialLoad = false;
-            fetchAndRenderApp(); 
-        }
-
-        function scrollToCat(id) {
-            const el = document.getElementById(id);
-            const yOffset = -90; 
-            const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-            window.scrollTo({top: y, behavior: 'smooth'});
-            document.querySelectorAll('.nav-pill').forEach(p => p.classList.remove('active'));
-            event.target.classList.add('active');
-        }
-
-        function openImageModal(src) {
-            document.getElementById('modal-image').src = src;
+        function openImageModal(item) {
+            document.getElementById('modal-image').src = item.image;
+            document.getElementById('modal-cat').innerText = item.category;
+            document.getElementById('modal-title').innerText = item.name;
+            document.getElementById('modal-price').innerText = item.price + " IQD";
             document.getElementById('image-modal').classList.add('active');
-            document.body.style.overflow = 'hidden'; 
         }
-
-        function closeImageModal() {
-            document.getElementById('modal-image').src = "";
-            document.getElementById('image-modal').classList.remove('active');
-            document.body.style.overflow = 'auto'; 
-        }
-
+        function closeImageModal() { document.getElementById('image-modal').classList.remove('active'); }
+        function cycleTheme() { currentThemeIndex = (currentThemeIndex + 1) % themes.length; document.documentElement.setAttribute('data-theme', themes[currentThemeIndex]); }
         fetchAndRenderApp();
     </script>
 </body>
