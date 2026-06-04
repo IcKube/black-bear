@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Black Bear | Royal Experience</title>
 
-    <!-- Elite Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&family=Tajawal:wght@300;400;500&display=swap" rel="stylesheet">
@@ -45,21 +44,7 @@
             --modal-bg: rgba(0, 0, 0, 0.85);
         }
 
-        /* --- 3. CARBON & CRIMSON THEME --- */
-        [data-theme="crimson"] {
-            --bg-color: #050505;
-            --surface-color: #121212;
-            --text-main: #ffffff;
-            --text-muted: #888888;
-            --accent-gold: #e11d48;
-            --accent-gold-glow: rgba(225, 29, 72, 0.15);
-            --line-color: rgba(255, 255, 255, 0.06);
-            --nav-bg: rgba(5, 5, 5, 0.8);
-            --pill-bg: rgba(255, 255, 255, 0.03);
-            --modal-bg: rgba(5, 5, 5, 0.85);
-        }
-
-        /* --- 4. MIDNIGHT FOREST THEME --- */
+        /* --- 3. MIDNIGHT FOREST THEME --- */
         [data-theme="forest"] {
             --bg-color: #0a0f0d;
             --surface-color: #111a16;
@@ -73,7 +58,7 @@
             --modal-bg: rgba(10, 15, 13, 0.85);
         }
 
-        /* --- 5. MIDNIGHT SAPPHIRE THEME --- */
+        /* --- 4. MIDNIGHT SAPPHIRE THEME --- */
         [data-theme="sapphire"] {
             --bg-color: #020617;
             --surface-color: #0f172a;
@@ -247,10 +232,8 @@
 </head>
 <body>
 
-    <!-- Language Toggle (Right) -->
     <button id="lang-toggle" class="top-btn lang-toggle" onclick="toggleLanguage()">عربي / AR</button>
     
-    <!-- Theme Switcher (Left) - SVG Icon -->
     <button id="theme-toggle" class="top-btn theme-toggle" onclick="cycleTheme()" aria-label="Change Theme" style="display: flex; align-items: center;">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22a10 10 0 1 1 10-10c0 2-2.5 3-4 3-1.5 0-2 1-2 2s.5 2 1 2c-.5.5-1.5 3-5 3Z"/>
@@ -261,13 +244,11 @@
         </svg>
     </button>
 
-    <!-- Welcome Curtain -->
     <div id="welcome-screen">
         <div class="welcome-monogram">BB</div>
         <div class="welcome-text" id="welcome-text">Royal Experience</div>
     </div>
 
-    <!-- Header -->
     <header>
         <div class="logo-placeholder">Logo</div>
         <h1 id="header-title">Black Bear</h1>
@@ -281,7 +262,6 @@
         <p>&copy; 2026 Black Bear. All rights reserved.</p>
     </footer>
 
-    <!-- Fullscreen Image Modal -->
     <div id="image-modal" class="modal-overlay" onclick="closeImageModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeImageModal()">&times;</button>
@@ -289,14 +269,13 @@
         </div>
     </div>
 
-    <!-- --- JAVASCRIPT --- -->
     <script>
         // --- State Management ---
         let currentLang = 'en'; 
         let isInitialLoad = true;
         
-        // Themes Array - Moved 'crimson' to the very end
-        const themes = ['light', 'dark', 'forest', 'sapphire', 'crimson']; 
+        // Themes Array - Removed 'crimson'
+        const themes = ['light', 'dark', 'forest', 'sapphire']; 
         let currentThemeIndex = 0;
 
         const translations = {
