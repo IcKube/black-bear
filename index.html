@@ -131,11 +131,14 @@
             background: radial-gradient(circle at top, var(--surface-color) 0%, var(--bg-color) 80%);
             transition: background 0.6s var(--smooth-curve);
         }
-        .logo-placeholder {
-            width: 80px; height: 80px; background-color: transparent;
-            border: 1px solid var(--accent-gold); border-radius: 50%;
-            margin: 0 auto 2.5rem; display: flex; align-items: center; justify-content: center;
-            color: var(--accent-gold); font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase;
+        .brand-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin: 0 auto 2rem;
+            display: block;
+            /* Optional: filter to make white logos look good on dark themes */
+            transition: opacity 0.3s ease;
         }
         h1 { font-family: var(--font-heading-en); font-size: 2.8rem; color: var(--text-main); margin-bottom: 0.8rem; font-weight: 400; letter-spacing: -0.5px; }
         .subtitle { font-size: 0.7rem; color: var(--text-muted); letter-spacing: 4px; text-transform: uppercase; font-weight: 400; }
@@ -249,8 +252,8 @@
         <div class="welcome-text" id="welcome-text">Royal Experience</div>
     </div>
 
-    <header>
-        <div class="logo-placeholder">Logo</div>
+   <header>
+        <img src="logo.png" alt="Black Bear Logo" class="brand-logo">
         <h1 id="header-title">Black Bear</h1>
         <div class="subtitle" id="header-subtitle">Royal Experience &bull; Est 2026</div>
     </header>
