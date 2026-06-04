@@ -26,6 +26,18 @@
         "price": "5,000"
     },
     { 
+        "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
+        "name": "Hot Chocolate", "ar_name": "هوت شوكليت",
+        "desc": "Rich Belgian chocolate melted in steamed milk", "ar_desc": "شوكولاتة بلجيكية غنية مذابة في حليب مبخر",
+        "price": "5,000"
+    },
+    { 
+        "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
+        "name": "Matcha Latte", "ar_name": "ماتشا لاتيه ساخن",
+        "desc": "Premium ceremonial matcha with steamed milk", "ar_desc": "ماتشا احتفالية فاخرة مع حليب مبخر",
+        "price": "5,500"
+    },
+    { 
         "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
         "name": "Iced V60", "ar_name": "في 60 بارد",
         "desc": "Pour over brewed cold", "ar_desc": "قهوة مقطرة باردة",
@@ -45,6 +57,18 @@
         "price": "6,000"
     },
     { 
+        "category": "Frappes", "ar_category": "مشروبات مثلجة",
+        "name": "Caramel Frappe", "ar_name": "فرابيه كراميل",
+        "desc": "Blended coffee with caramel syrup and whipped cream", "ar_desc": "قهوة مثلجة مع شراب الكراميل وكريمة الخفق",
+        "price": "5,500"
+    },
+    { 
+        "category": "Frappes", "ar_category": "مشروبات مثلجة",
+        "name": "Mocha Frappe", "ar_name": "فرابيه موكا",
+        "desc": "Blended coffee with rich dark chocolate", "ar_desc": "قهوة مثلجة مع شوكولاتة داكنة غنية",
+        "price": "6,000"
+    },
+    { 
         "category": "Pastries", "ar_category": "المخبوزات",
         "name": "Butter Croissant", "ar_name": "كرواسون بالزبدة",
         "desc": "Freshly baked daily", "ar_desc": "مخبوز طازج يومياً",
@@ -56,5 +80,18 @@
         "desc": "Basque burnt cheesecake", "ar_desc": "تشيز كيك محروق",
         "price": "6,500",
         "image": "https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?w=400&q=80"
+    },
+    { 
+        "category": "Savory", "ar_category": "الموالح",
+        "name": "Turkey & Cheese Croissant", "ar_name": "كرواسون ديك رومي وجبن",
+        "desc": "Smoked turkey with melted cheddar", "ar_desc": "ديك رومي مدخن مع جبن شيدر ذائب",
+        "price": "4,500"
+    },
+    { 
+        "category": "Savory", "ar_category": "الموالح",
+        "name": "Halloumi Sandwich", "ar_name": "ساندويتش حلوم",
+        "desc": "Grilled halloumi with pesto and sun-dried tomatoes", "ar_desc": "حلوم مشوي مع بيستو وطماطم مجففة",
+        "price": "5,000",
+        "badge": "New", "ar_badge": "جديد"
     }
 ]
