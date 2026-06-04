@@ -1,85 +1,366 @@
 [
-    { 
-        "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
-        "name": "Espresso", "ar_name": "إسبريسو",
-        "desc": "Single origin house blend", "ar_desc": "مزيج خاص من مصدر واحد",
-        "price": "3,000",
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Espresso Single", "ar_name": "إسبريسو سنجل",
+        "desc": "A rich and intense single shot of coffee.", "ar_desc": "جرعة غنية ومكثفة من القهوة.",
+        "price": "2,000",
         "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&q=80"
     },
-    { 
-        "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
-        "name": "Americano", "ar_name": "أمريكانو",
-        "desc": "Double shot with hot water", "ar_desc": "جرعة مزدوجة مع ماء ساخن",
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Double Espresso", "ar_name": "إسبريسو دبل",
+        "desc": "A strong double shot of our signature blend.", "ar_desc": "جرعة مزدوجة وقوية من مزيجنا المميز.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Espresso Macchiato", "ar_name": "إسبريسو ميكياتو",
+        "desc": "Espresso topped with a dash of foamed milk.", "ar_desc": "إسبريسو مع القليل من رغوة الحليب.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Longo", "ar_name": "لونغو",
+        "desc": "A longer, smoother espresso extraction.", "ar_desc": "استخلاص أطول وأنعم للإسبريسو.",
         "price": "3,500",
+        "image": "https://images.unsplash.com/photo-1514432324607-a125290cae8d?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Americano", "ar_name": "أمريكانو",
+        "desc": "Espresso diluted with hot water for a smooth finish.", "ar_desc": "إسبريسو مخفف بالماء الساخن لمذاق سلس.",
+        "price": "4,000",
         "image": "https://images.unsplash.com/photo-1551030173-122aabc4489c?w=400&q=80"
     },
-    { 
-        "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Turkish Caffe", "ar_name": "قهوة تركية",
+        "desc": "Traditional, finely ground unfiltered coffee.", "ar_desc": "قهوة تقليدية مطحونة ناعماً وغير مصفاة.",
+        "price": "1,500",
+        "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Niscoffe", "ar_name": "نسكافيه",
+        "desc": "Classic instant coffee for a quick boost.", "ar_desc": "قهوة كلاسيكية سريعة التحضير.",
+        "price": "2,500",
+        "image": "https://images.unsplash.com/photo-1559525839-b184a4d698c7?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Cortado", "ar_name": "كورتادو",
+        "desc": "Equal parts espresso and steamed milk.", "ar_desc": "كميات متساوية من الإسبريسو والحليب المبخر.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1534687941688-651ccaafbff8?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
         "name": "Flat White", "ar_name": "فلات وايت",
-        "desc": "Micro-foamed milk over espresso", "ar_desc": "حليب مبخر مع الإسبريسو",
-        "price": "4,500",
-        "badge": "Signature", "ar_badge": "مميز",
+        "desc": "Rich espresso with velvety micro-foamed milk.", "ar_desc": "إسبريسو غني مع حليب مخملي ناعم.",
+        "price": "4,000",
         "image": "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?w=400&q=80"
     },
-    { 
-        "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
-        "name": "Spanish Latte", "ar_name": "سبانش لاتيه",
-        "desc": "Sweetened condensed milk signature", "ar_desc": "مشروبنا المميز مع الحليب المكثف المحلى",
-        "price": "5,000",
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Cappuccino", "ar_name": "كابتشينو",
+        "desc": "Classic blend of espresso, steamed milk, and thick foam.", "ar_desc": "مزيج كلاسيكي من الإسبريسو والحليب والرغوة الكثيفة.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Mocha", "ar_name": "موكا",
+        "desc": "Espresso and hot milk mixed with rich chocolate.", "ar_desc": "إسبريسو وحليب ساخن ممزوج بالشوكولاتة الغنية.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1596078841242-12f73fc697c6?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Spanish", "ar_name": "سبانش لاتيه",
+        "desc": "Sweetened with condensed milk for a creamy finish.", "ar_desc": "محلى بالحليب المكثف لمذاق كريمي.",
+        "price": "4,500",
         "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&q=80"
     },
-    { 
-        "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Vanilla", "ar_name": "لاتيه فانيلا",
+        "desc": "Smooth latte infused with sweet vanilla syrup.", "ar_desc": "لاتيه ناعم بنكهة شراب الفانيلا الحلو.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Caramel Latte", "ar_name": "كراميل لاتيه",
+        "desc": "Rich espresso and milk with buttery caramel.", "ar_desc": "إسبريسو غني وحليب مع الكراميل بالزبدة.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Hazelnut Latte", "ar_name": "لاتيه بندق",
+        "desc": "Warm latte balanced with roasted hazelnut notes.", "ar_desc": "لاتيه دافئ متوازن مع نكهات البندق المحمص.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1620219365994-f443a86ea626?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Coconut", "ar_name": "لاتيه جوز الهند",
+        "desc": "A tropical twist on the classic hot latte.", "ar_desc": "لمسة استوائية على اللاتيه الساخن الكلاسيكي.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Lotus", "ar_name": "لاتيه لوتس",
+        "desc": "Latte flavored with caramelized biscuit spread.", "ar_desc": "لاتيه بنكهة زبدة البسكويت المكرملة.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Pistachio", "ar_name": "لاتيه فستق",
+        "desc": "Premium latte with rich, nutty pistachio flavor.", "ar_desc": "لاتيه فاخر بنكهة الفستق الغنية.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1620219365994-f443a86ea626?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte Rose", "ar_name": "لاتيه روز",
+        "desc": "Delicate and aromatic floral latte.", "ar_desc": "لاتيه زهري رقيق وعطري.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1600354146086-63e26fb51db1?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
+        "name": "Latte White Moca", "ar_name": "وايت موكا لاتيه",
+        "desc": "Smooth espresso blended with sweet white chocolate.", "ar_desc": "إسبريسو ناعم ممزوج بالشوكولاتة البيضاء الحلوة.",
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1558565860-2d854eb105cf?w=400&q=80"
+    },
+    {
+        "category": "Espresso & Hot Drinks", "ar_category": "الإسبريسو والمشروبات الساخنة",
         "name": "Hot Chocolate", "ar_name": "هوت شوكليت",
-        "desc": "Rich Belgian chocolate melted in steamed milk", "ar_desc": "شوكولاتة بلجيكية غنية مذابة في حليب مبخر",
-        "price": "5,000",
+        "desc": "Rich and creamy melted chocolate with steamed milk.", "ar_desc": "شوكولاتة ذائبة غنية وكريمية مع الحليب المبخر.",
+        "price": "3,500",
         "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&q=80"
     },
-
-    { 
-        "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
-        "name": "Iced V60", "ar_name": "في 60 بارد",
-        "desc": "Pour over brewed cold", "ar_desc": "قهوة مقطرة باردة",
-        "price": "5,500",
-        "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&q=80"
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Caramel Frappe", "ar_name": "فرابيه كراميل",
+        "desc": "Blended iced coffee with rich caramel syrup.", "ar_desc": "قهوة مثلجة مخفوقة مع شراب الكراميل الغني.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1572442388796-11668a64e553?w=400&q=80"
     },
-    { 
-        "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
-        "name": "Cold Brew", "ar_name": "كولد برو",
-        "desc": "Steeped for 24 hours", "ar_desc": "منقوعة لمدة 24 ساعة",
-        "price": "4,500",
-        "badge": "Bestseller", "ar_badge": "الأكثر مبيعاً",
-        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80"
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Vanilla Frappe", "ar_name": "فرابيه فانيلا",
+        "desc": "Sweet and smooth vanilla blended with ice.", "ar_desc": "فانيلا حلوة وناعمة مخفوقة مع الثلج.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?w=400&q=80"
     },
-
-    { 
-        "category": "Frappes", "ar_category": "مشروبات مثلجة",
-        "name": "Mocha Frappe", "ar_name": "فرابيه موكا",
-        "desc": "Blended coffee with rich dark chocolate", "ar_desc": "قهوة مثلجة مع شوكولاتة داكنة غنية",
-        "price": "6,000",
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Chocolate Frappe", "ar_name": "فرابيه شوكولاتة",
+        "desc": "Rich dark chocolate blended into an icy treat.", "ar_desc": "شوكولاتة داكنة غنية مخفوقة في مشروب مثلج.",
+        "price": "4,000",
         "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?w=400&q=80"
     },
-    { 
-        "category": "Pastries", "ar_category": "المخبوزات",
-        "name": "Butter Croissant", "ar_name": "كرواسون بالزبدة",
-        "desc": "Freshly baked daily", "ar_desc": "مخبوز طازج يومياً",
-        "price": "3,000",
-        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "White Chocolate Frappe", "ar_name": "فرابيه شوكولاتة بيضاء",
+        "desc": "Creamy white chocolate blended with ice.", "ar_desc": "شوكولاتة بيضاء كريمية مخفوقة مع الثلج.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1558565860-2d854eb105cf?w=400&q=80"
     },
-    { 
-        "category": "Pastries", "ar_category": "المخبوزات",
-        "name": "San Sebastian", "ar_name": "سان سباستيان",
-        "desc": "Basque burnt cheesecake", "ar_desc": "تشيز كيك محروق",
-        "price": "6,500",
-        "image": "https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?w=400&q=80"
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Oreo Frappe", "ar_name": "فرابيه أوريو",
+        "desc": "Blended coffee loaded with crushed Oreo cookies.", "ar_desc": "قهوة مخفوقة مليئة بقطع بسكويت الأوريو.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80"
     },
-
-    { 
-        "category": "Savory", "ar_category": "الموالح",
-        "name": "Halloumi Sandwich", "ar_name": "ساندويتش حلوم",
-        "desc": "Grilled halloumi with pesto and sun-dried tomatoes", "ar_desc": "حلوم مشوي مع بيستو وطماطم مجففة",
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Nutella Frappe", "ar_name": "فرابيه نوتيلا",
+        "desc": "Hazelnut chocolate spread blended to perfection.", "ar_desc": "شوكولاتة البندق مخفوقة بإتقان.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1595981267035-7b04d84b4f1c?w=400&q=80"
+    },
+    {
+        "category": "Frappes", "ar_category": "فرابيه",
+        "name": "Kinder Frappe", "ar_name": "فرابيه كيندر",
+        "desc": "Sweet and milky Kinder chocolate blended with ice.", "ar_desc": "شوكولاتة كيندر الحلوة مخفوقة مع الثلج.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Vanilla Milkshake", "ar_name": "ميلك شيك فانيلا",
+        "desc": "Classic creamy vanilla shake.", "ar_desc": "ميلك شيك الفانيلا الكريمي الكلاسيكي.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1579954115567-d7240ce0fd09?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Chocolate Milkshake", "ar_name": "ميلك شيك شوكولاتة",
+        "desc": "Thick, rich, and deeply chocolatey.", "ar_desc": "ميلك شيك شوكولاتة كثيف وغني.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Strawberry Milkshake", "ar_name": "ميلك شيك فراولة",
+        "desc": "Sweet, pink, and refreshing strawberry shake.", "ar_desc": "ميلك شيك فراولة حلو ومنعش.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1593179357596-3392ea8da63d?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Caramel Milkshake", "ar_name": "ميلك شيك كراميل",
+        "desc": "Creamy shake blended with sweet caramel.", "ar_desc": "ميلك شيك كريمي مخفوق مع الكراميل الحلو.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1599507593499-a3f7d7d97667?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Oreo Milkshake", "ar_name": "ميلك شيك أوريو",
+        "desc": "Vanilla shake packed with crushed Oreos.", "ar_desc": "ميلك شيك فانيلا مليء بقطع الأوريو.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1553177595-4de2bb0842b9?w=400&q=80"
+    },
+    {
+        "category": "Milkshakes", "ar_category": "ميلك شيك",
+        "name": "Lotus Milkshake", "ar_name": "ميلك شيك لوتس",
+        "desc": "Creamy shake flavored with caramelized Lotus Biscoff.", "ar_desc": "ميلك شيك كريمي بنكهة زبدة اللوتس المكرملة.",
+        "price": "4,000",
+        "image": "https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Mango Smoothie", "ar_name": "سموثي مانجو",
+        "desc": "A vibrant, tropical, and icy mango blend.", "ar_desc": "مزيج مانجو استوائي مثلج ومنعش.",
         "price": "5,000",
-        "badge": "New", "ar_badge": "جديد",
-        "image": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80"
+        "image": "https://images.unsplash.com/photo-1623065422902-30a2d299bbe4?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Strawberry Smoothie", "ar_name": "سموثي فراولة",
+        "desc": "Freshly blended icy strawberries.", "ar_desc": "فراولة مثلجة ومخفوقة طازجة.",
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Banana Smoothie", "ar_name": "سموثي موز",
+        "desc": "Rich, creamy, and naturally sweet banana blend.", "ar_desc": "مزيج موز غني وكريمي وحلو بشكل طبيعي.",
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Blueberry Smoothie", "ar_name": "سموثي توت أزرق",
+        "desc": "Antioxidant-rich icy blueberry mix.", "ar_desc": "مزيج توت أزرق مثلج وغني بمضادات الأكسدة.",
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1553530979-7ee52a2670ac?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Pineapple Smoothie", "ar_name": "سموثي أناناس",
+        "desc": "Refreshing and tart tropical pineapple blend.", "ar_desc": "مزيج أناناس استوائي منعش ولاذع.",
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1550507992-eb63ffee0224?w=400&q=80"
+    },
+    {
+        "category": "Smoothies", "ar_category": "سموثي",
+        "name": "Tropical Smoothie", "ar_name": "سموثي استوائي",
+        "desc": "A refreshing mix of island fruits.", "ar_desc": "مزيج منعش من فواكه الجزيرة الاستوائية.",
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1502741224143-9038bc1e0163?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Classic Mojito", "ar_name": "موهيتو كلاسيك",
+        "desc": "Fresh mint, lime, and sparkling water.", "ar_desc": "نعناع طازج، ليمون، وماء فوار.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Strawberry Mojito", "ar_name": "موهيتو فراولة",
+        "desc": "Classic mojito muddled with fresh strawberries.", "ar_desc": "موهيتو كلاسيكي ممزوج بالفراولة الطازجة.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Raspberry Mojito", "ar_name": "موهيتو توت أحمر",
+        "desc": "Sweet and tart raspberry infused mojito.", "ar_desc": "موهيتو بنكهة التوت الأحمر الحلو واللاذع.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Blueberry Mojito", "ar_name": "موهيتو توت أزرق",
+        "desc": "Muddled blueberries with mint and lime.", "ar_desc": "توت أزرق مهروس مع النعناع والليمون.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1560512823-829485b8bf24?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Blackberry Mojito", "ar_name": "موهيتو بلاك بيري",
+        "desc": "Deep, rich dark berry flavors with a minty finish.", "ar_desc": "نكهات التوت الأسود العميقة والغنية مع النعناع.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Cherry Mojito", "ar_name": "موهيتو كرز",
+        "desc": "Sweet cherry notes blended with sparkling mint.", "ar_desc": "نكهات الكرز الحلو الممزوجة بالنعناع الفوار.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1595980004561-bd8041cbf25b?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Peach Mojito", "ar_name": "موهيتو خوخ",
+        "desc": "Light, refreshing, and subtly sweet peach flavor.", "ar_desc": "نكهة خوخ خفيفة ومنعشة وحلوة بمهارة.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1614705353521-2e6840742d4a?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Mango Mojito", "ar_name": "موهيتو مانجو",
+        "desc": "Tropical mango paired with refreshing mint.", "ar_desc": "مانجو استوائي مقترن بالنعناع المنعش.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Pineapple Mojito", "ar_name": "موهيتو أناناس",
+        "desc": "A vibrant and tart island-style mojito.", "ar_desc": "موهيتو نابض بالحياة ولاذع على طراز الجزر.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1587888637140-849b25d80ef9?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Coconut Mojito", "ar_name": "موهيتو جوز الهند",
+        "desc": "Creamy coconut mixed with lime and mint.", "ar_desc": "جوز الهند الكريمي الممزوج بالليمون والنعناع.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1549420658-2921a2d6ffb6?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Pomegranate Mojito", "ar_name": "موهيتو رمان",
+        "desc": "Sweet and tangy pomegranate sparkle.", "ar_desc": "رمان حلو ومنعش مع مياه فوارة.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1613915177648-fb4ce3439bf6?w=400&q=80"
+    },
+    {
+        "category": "Mojitos", "ar_category": "موهيتو",
+        "name": "Blue Curaçao Mojito", "ar_name": "موهيتو بلو كوراكاو",
+        "desc": "Vibrant blue citrus mojito, perfect for summer.", "ar_desc": "موهيتو حمضيات أزرق نابض بالحياة، مثالي للصيف.",
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1588666324835-2ee850024479?w=400&q=80"
     }
 ]
