@@ -70,4 +70,17 @@
         "desc": "Rich Belgian chocolate melted in steamed milk", "ar_desc": "شوكولاتة بلجيكية غنية مذابة في حليب مبخر",
         "price": "5,000"
     }
+    { 
+        "category": "Pastries", "ar_category": "المخبوزات",
+        "name": "San Sebastian", "ar_name": "سان سباستيان",
+        "desc": "Basque burnt cheesecake", "ar_desc": "تشيز كيك محروق",
+        "price": "6,500",
+        "image": "https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?w=400&q=80"
+    },
+    { 
+        "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
+        "name": "Hot Chocolate", "ar_name": "هوت شوكليت",
+        "desc": "Rich Belgian chocolate melted in steamed milk", "ar_desc": "شوكولاتة بلجيكية غنية مذابة في حليب مبخر",
+        "price": "5,000"
+    }
 ]
