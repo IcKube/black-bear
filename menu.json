@@ -57,4 +57,10 @@
         "price": "6,500",
         "image": "https://images.unsplash.com/photo-1605333396915-47ed6b68a00e?w=400&q=80"
     }
+     { 
+        "category": "HOT DRINKS", "ar_category": "المشروبات الساخنة",
+        "name": "TURKISH COFFEE", "ar_name": "قهوة تركية",
+        "desc": "Single origin house blend", "ar_desc": "مزيج خاص من مصدر واحد",
+        "price": "3,000"
+    },
 ]
