@@ -15,9 +15,13 @@
             --bg-color: #000000;
             --surface-color: #111111;
             
-            /* Elite Typography Colors */
-            --text-main: #f9f8f6;     /* Warm Alabaster (Soft, premium white) */
-            --text-muted: #a8a29e;    /* Warm Slate (Perfectly balanced hierarchy) */
+            /* --- ELITE TYPOGRAPHY OPTIONS (1 & 2) --- */
+            --color-1-pearl: #f1f5f9;       /* 1. The Cool Pearl */
+            --color-2-alabaster: #f9f8f6;   /* 2. The Warm Alabaster */
+            
+            /* Change var(--color-2-alabaster) to var(--color-1-pearl) to swap! */
+            --text-main: var(--color-2-alabaster);  
+            --text-muted: #a8a29e;          /* Warm Slate for perfect balance */
             
             --accent-gold: #c5a059;
             --accent-gold-glow: rgba(197, 160, 89, 0.1);
@@ -197,14 +201,8 @@
         .modal-title { font-family: var(--font-heading-en); font-size: 2rem; color: var(--text-main); font-weight: 500; line-height: 1.1; }
         .modal-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
         
-        .modal-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line-color); }
-        .modal-price { font-size: 1.3rem; font-weight: 500; color: var(--text-main); }
-        .order-btn {
-            background: var(--accent-gold); color: #000; border: none; padding: 12px 24px;
-            border-radius: 30px; font-weight: 600; cursor: pointer; text-transform: uppercase;
-            font-size: 0.85rem; letter-spacing: 1px; transition: filter 0.3s; font-family: inherit;
-        }
-        .order-btn:hover { filter: brightness(1.1); }
+        .modal-footer { display: flex; justify-content: flex-end; align-items: center; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--line-color); }
+        .modal-price { font-size: 1.4rem; font-weight: 500; color: var(--accent-gold); letter-spacing: 1px; }
         
         footer { 
             text-align: center; padding: 4rem 1rem; color: var(--text-muted); 
@@ -245,7 +243,7 @@
         <p>&copy; 2026 Black Bear. All rights reserved.</p>
     </footer>
 
-    <!-- Detailed Product Pop Up Window -->
+    <!-- Detailed Product Pop Up Window (Order Button Removed) -->
     <div id="product-modal" class="modal-overlay" onclick="closeProductModal()">
         <div class="modal-content" onclick="event.stopPropagation()">
             <button class="modal-close" onclick="closeProductModal()">&times;</button>
@@ -255,7 +253,6 @@
                 <p id="modal-desc" class="modal-desc"></p>
                 <div class="modal-footer">
                     <span id="modal-price" class="modal-price"></span>
-                    <button class="order-btn" id="order-btn-text">Order Now</button>
                 </div>
             </div>
         </div>
@@ -270,8 +267,8 @@
         let currentThemeIndex = 0;
 
         const translations = {
-            en: { welcome: "Royal Experience", title: "Black Bear", subtitle: "Royal Experience &bull; Est 2026", btn: "عربي / AR", currency: "IQD", order: "Order Now" },
-            ar: { welcome: "تجربة ملكية", title: "بلاك بير", subtitle: "تجربة ملكية &bull; تأسس ٢٠٢٦", btn: "EN / English", currency: "د.ع", order: "اطلب الآن" }
+            en: { welcome: "Royal Experience", title: "Black Bear", subtitle: "Royal Experience &bull; Est 2026", btn: "عربي / AR", currency: "IQD" },
+            ar: { welcome: "تجربة ملكية", title: "بلاك بير", subtitle: "تجربة ملكية &bull; تأسس ٢٠٢٦", btn: "EN / English", currency: "د.ع" }
         };
 
         async function fetchAndRenderApp() {
@@ -311,7 +308,6 @@
                         const badgeHtml = badge ? `<span class="badge">${badge}</span>` : '';
                         const thumbnailHtml = item.image ? `<img src="${item.image}" class="item-thumbnail" alt="${name}">` : '';
                         
-                        // Added onclick to the entire menu-item div
                         menuHtml += `
                             <div class="menu-item" style="animation-delay: ${delay}s" onclick="openProductModal(${JSON.stringify(item).replace(/"/g, '&quot;')})">
                                 <div class="menu-item-info">
@@ -360,13 +356,11 @@
             event.target.classList.add('active');
         }
 
-        // --- New Product Modal Logic ---
         function openProductModal(item) {
             const t = translations[currentLang];
             const name = currentLang === 'en' ? item.name : item.ar_name;
             const desc = currentLang === 'en' ? item.desc : item.ar_desc;
             
-            // Handle image logic (hide if the item has no image)
             const heroImg = document.getElementById('modal-hero');
             if (item.image) {
                 heroImg.src = item.image;
@@ -378,7 +372,6 @@
             document.getElementById('modal-title').innerText = name;
             document.getElementById('modal-desc').innerText = desc;
             document.getElementById('modal-price').innerText = item.price + " " + t.currency;
-            document.getElementById('order-btn-text').innerText = t.order;
             
             document.getElementById('product-modal').classList.add('active');
             document.body.style.overflow = 'hidden'; 
