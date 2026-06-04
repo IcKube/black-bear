@@ -3,13 +3,15 @@
         "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
         "name": "Espresso", "ar_name": "إسبريسو",
         "desc": "Single origin house blend", "ar_desc": "مزيج خاص من مصدر واحد",
-        "price": "3,000"
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?w=400&q=80"
     },
     { 
         "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
         "name": "Americano", "ar_name": "أمريكانو",
         "desc": "Double shot with hot water", "ar_desc": "جرعة مزدوجة مع ماء ساخن",
-        "price": "3,500"
+        "price": "3,500",
+        "image": "https://images.unsplash.com/photo-1551030173-122aabc4489c?w=400&q=80"
     },
     { 
         "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
@@ -23,56 +25,65 @@
         "category": "Espresso Bar", "ar_category": "ركن الإسبريسو",
         "name": "Spanish Latte", "ar_name": "سبانش لاتيه",
         "desc": "Sweetened condensed milk signature", "ar_desc": "مشروبنا المميز مع الحليب المكثف المحلى",
-        "price": "5,000"
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=400&q=80"
     },
     { 
         "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
         "name": "Hot Chocolate", "ar_name": "هوت شوكليت",
         "desc": "Rich Belgian chocolate melted in steamed milk", "ar_desc": "شوكولاتة بلجيكية غنية مذابة في حليب مبخر",
-        "price": "5,000"
+        "price": "5,000",
+        "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=400&q=80"
     },
     { 
         "category": "Hot Drinks", "ar_category": "المشروبات الساخنة",
         "name": "Matcha Latte", "ar_name": "ماتشا لاتيه ساخن",
         "desc": "Premium ceremonial matcha with steamed milk", "ar_desc": "ماتشا احتفالية فاخرة مع حليب مبخر",
-        "price": "5,500"
+        "price": "5,500",
+        "image": "https://images.unsplash.com/photo-1536514072410-5019a3c69182?w=400&q=80"
     },
     { 
         "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
         "name": "Iced V60", "ar_name": "في 60 بارد",
         "desc": "Pour over brewed cold", "ar_desc": "قهوة مقطرة باردة",
-        "price": "5,500"
+        "price": "5,500",
+        "image": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=400&q=80"
     },
     { 
         "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
         "name": "Cold Brew", "ar_name": "كولد برو",
         "desc": "Steeped for 24 hours", "ar_desc": "منقوعة لمدة 24 ساعة",
         "price": "4,500",
-        "badge": "Bestseller", "ar_badge": "الأكثر مبيعاً"
+        "badge": "Bestseller", "ar_badge": "الأكثر مبيعاً",
+        "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80"
     },
     { 
         "category": "Iced Drinks", "ar_category": "المشروبات الباردة",
         "name": "Iced Matcha", "ar_name": "ماتشا بارد",
         "desc": "Premium Japanese green tea", "ar_desc": "شاي أخضر ياباني فاخر",
-        "price": "6,000"
+        "price": "6,000",
+        "image": "https://images.unsplash.com/photo-1589187652758-e4b7724213d2?w=400&q=80"
     },
     { 
         "category": "Frappes", "ar_category": "مشروبات مثلجة",
         "name": "Caramel Frappe", "ar_name": "فرابيه كراميل",
         "desc": "Blended coffee with caramel syrup and whipped cream", "ar_desc": "قهوة مثلجة مع شراب الكراميل وكريمة الخفق",
-        "price": "5,500"
+        "price": "5,500",
+        "image": "https://images.unsplash.com/photo-1572442388796-11668a64e553?w=400&q=80"
     },
     { 
         "category": "Frappes", "ar_category": "مشروبات مثلجة",
         "name": "Mocha Frappe", "ar_name": "فرابيه موكا",
         "desc": "Blended coffee with rich dark chocolate", "ar_desc": "قهوة مثلجة مع شوكولاتة داكنة غنية",
-        "price": "6,000"
+        "price": "6,000",
+        "image": "https://images.unsplash.com/photo-1530373239216-42518e6b4063?w=400&q=80"
     },
     { 
         "category": "Pastries", "ar_category": "المخبوزات",
         "name": "Butter Croissant", "ar_name": "كرواسون بالزبدة",
         "desc": "Freshly baked daily", "ar_desc": "مخبوز طازج يومياً",
-        "price": "3,000"
+        "price": "3,000",
+        "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80"
     },
     { 
         "category": "Pastries", "ar_category": "المخبوزات",
@@ -85,13 +96,15 @@
         "category": "Savory", "ar_category": "الموالح",
         "name": "Turkey & Cheese Croissant", "ar_name": "كرواسون ديك رومي وجبن",
         "desc": "Smoked turkey with melted cheddar", "ar_desc": "ديك رومي مدخن مع جبن شيدر ذائب",
-        "price": "4,500"
+        "price": "4,500",
+        "image": "https://images.unsplash.com/photo-1628198547225-b4619a924ab7?w=400&q=80"
     },
     { 
         "category": "Savory", "ar_category": "الموالح",
         "name": "Halloumi Sandwich", "ar_name": "ساندويتش حلوم",
         "desc": "Grilled halloumi with pesto and sun-dried tomatoes", "ar_desc": "حلوم مشوي مع بيستو وطماطم مجففة",
         "price": "5,000",
-        "badge": "New", "ar_badge": "جديد"
+        "badge": "New", "ar_badge": "جديد",
+        "image": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=400&q=80"
     }
 ]
